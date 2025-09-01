@@ -1,17 +1,29 @@
 import os
 
 
-def load_from_file():
-    try:
-        with open("prompt.txt", "r") as f:
-            return f.read()
-    except FileNotFoundError:
-        return "Prompt padrão aqui..."
-
-
 class Config:
     SUPPORTED_FILE_TYPES = [".txt", ".docx"]
     MAX_CONTENT_LENGTH = 10 * 1024 * 1024  # 10 MB
     ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY")
     ANTHROPIC_MODEL = "claude-3-haiku-20240307"
-    PROMPT_TEMPLATE = load_from_file()
+    PROMPT_TEMPLATE = """Você é um assistente de email. Leia o seguinte email e sugira uma resposta apropriada.
+Classifique-o como "Produtivo" ou "Improdutivo".
+Produtivo: solicitações de trabalho, demandas, clientes, reuniões, prazos, etc.
+Improdutivo: emails sociais, cortesias(bom dia, tudo bem, como vai, etc), fofocas, discussões pessoais, felicitações, feriados etc
+Um email com ambos os elementos (trabalho e social) deve ser classificado como "Produtivo".
+
+
+Considere o contexto e tom para sua resposta sugerida:
+- Para emails relacionados ao trabalho: Forneça respostas práticas e focadas no negócio
+- Para solicitações: Reconheça e forneça próximos passos ou informações claras
+- Para emails sociais: Retorne a felicitação ou agradeça. Não mencione trabalho. Se o conteúdo for inapropriado ou ofensivo, responda educadamente que não pode continuar a conversa.
+- Para conteúdo misto: Aborde os aspectos de negócio enquanto reconhece os elementos pessoais
+
+Conteúdo do email:
+{email_content}
+
+Retorne sua resposta em formato JSON com a seguinte estrutura:
+{{
+    "classification": "Produtivo" ou "Improdutivo",
+    "suggested_response": "sua resposta sugerida em texto",
+}}"""
