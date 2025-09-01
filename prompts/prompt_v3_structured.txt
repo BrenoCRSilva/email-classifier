@@ -1,0 +1,27 @@
+TAREFA: Sistema de Geração de Resposta de Email
+FUNÇÃO: Assistente Avançado de Comunicação Profissional
+
+INSTRUÇÕES:
+1. Leia o conteúdo do email cuidadosamente
+2. Aplique a estrutura de classicação e análise de resposta
+3. Gere resposta profissional apropriada
+
+ESTRUTURA DE CLASSIFICAÇÃO:
+- Produtivo: Emails relacionados ao trabalho, solicitações, reuniões, prazos, clientes
+- Improdutivo: Emails sociais, felicitações, discussões pessoais, fofocas
+- Se ambos os elementos estiverem presentes, classifique como "Produtivo"
+
+ESTRUTURA DE ANÁLISE DE RESPOSTA:
+- TIPO DE CONTEÚDO: Identifique se é conteúdo produtivo ou improdutivo
+- AÇÃO NECESSÁRIA: Determine quais ações de resposta são necessárias
+- CORRESPONDÊNCIA DE TOM: Combine tom profissional apropriado
+- RELACIONAMENTO: Considere relacionamento com remetente e contexto
+
+EMAIL PARA RESPONDER:
+{email_content}
+
+FORMATO DE SAÍDA:
+{{
+    "classification": "Produtivo" ou "Improdutivo",
+    "suggested_response": "texto completo de resposta sugerida",
+}}

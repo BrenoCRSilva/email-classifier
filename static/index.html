@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificador de Emails</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="header">
+            <h1>Classificador de Emails</h1>
+            <p class="subtitle">Categorização e geração de respostas de emails com IA</p>
+        </header>
+
+        <div class="chat-container">
+            <div class="message-list" id="messageList">
+                <div class="message assistant-message">
+                    <div class="message-content">
+                        <p>Olá! Sou um assistente de IA que ajuda a classificar emails e sugerir respostas apropriadas.</p>
+                        <p>Você pode colar o conteúdo do seu email na área de texto abaixo ou fazer upload de um arquivo (.txt ou .docx). Vou analisar e categorizar como <strong>Produtivo</strong> (requer ação) ou <strong>Improdutivo</strong> (informativo/social), e então sugerir uma resposta apropriada.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <div class="input-box">
+                    <textarea id="emailInput" 
+                             placeholder="Cole o conteúdo do seu email aqui..."
+                             rows="3"></textarea>
+                    <div class="input-actions">
+                        <div class="input-left">
+                            <input type="file" id="fileInput" accept=".txt,.docx" style="display: none;">
+                            <button class="attach-btn" id="attachBtn" title="Upload arquivo .txt ou .docx">
+                                📎
+                            </button>
+                            <span class="char-counter" id="charCounter">0/3000</span>
+                        </div>
+                        <button class="send-btn" id="sendBtn">
+                            Enviar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+[
+  {
+    "content": "Feliz Ano Novo pessoal! Espero que tenham tido umas férias maravilhosas.",
+    "expected_response": "Feliz Ano Novo! Obrigado pelos votos. Ansioso por um ano produtivo pela frente com a equipe."
+  },
+  {
+    "content": "Obrigado por todos os parabéns de aniversário! Vocês são a melhor equipe.",
+    "expected_response": "De nada! Espero que tenha tido uma comemoração de aniversário maravilhosa. Feliz em fazer parte de uma equipe tão ótima."
+  },
+  {
+    "content": "Alguém viu o jogo ontem à noite? Que performance incrível!",
+    "expected_response": "Não consegui assistir, mas ouvi que foi incrível! Parece que foi uma virada e tanto."
+  },
+  {
+    "content": "Espero que todos tenham um fim de semana fantástico! Nos vemos segunda!",
+    "expected_response": "Obrigado! Você também - aproveite seu fim de semana e nos vemos bem cedo segunda de manhã."
+  }
+]

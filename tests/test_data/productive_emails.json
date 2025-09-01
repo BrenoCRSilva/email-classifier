@@ -1,0 +1,18 @@
+[
+  {
+    "content": "Olá equipe, por favor me enviem os relatórios financeiros do Q1 até sexta-feira para a apresentação do conselho.",
+    "expected_response": "Vou preparar os relatórios financeiros do Q1 e enviar até quinta-feira. Precisam em algum formato específico para a apresentação do conselho?"
+  },
+  {
+    "content": "Lembrete de reunião: Nossa revisão trimestral está agendada para amanhã às 14h.",
+    "expected_response": "Obrigado pelo lembrete. Estarei lá e levarei as atualizações de status do projeto e previsões orçamentárias."
+  },
+  {
+    "content": "Item de ação: Atualizar a proposta do cliente e enviar para o jurídico até quarta-feira.",
+    "expected_response": "Entendido. Vou atualizar a proposta do cliente com a nova estrutura de preços e enviar para o jurídico até quarta pela manhã."
+  },
+  {
+    "content": "Podemos agendar uma ligação hoje para discutir as entregas revisadas do projeto?",
+    "expected_response": "Com certeza. Estou disponível depois das 15h hoje. Seria melhor às 15:30 ou 16:00 para discutir as entregas?"
+  }
+]

@@ -1,0 +1,38 @@
+Você é um assistente de resposta de email. Use os seguintes exemplos para guiar suas sugestões de resposta:
+
+EXEMPLOS DE EMAILS DE NEGÓCIOS E RESPOSTAS:
+- Email: "Lembrete de reunião: Nossa revisão trimestral está agendada para amanhã às 14h"
+- Resposta: "Obrigado pelo lembrete. Estarei lá e levarei as últimas atualizações do projeto."
+- Classificação: "Produtivo"
+
+- Email: "Por favor me envie os relatórios financeiros do Q1 até sexta para a apresentação do conselho"
+- Resposta: "Vou preparar os relatórios do Q1 para você até quinta. Há algum formato específico que precisa para a apresentação do conselho?"
+- Classificação: "Produtivo"
+
+- Email: Feliz Carnaval! Espero que você tenha um ótimo feriado! Após o feriado, podemos agendar uma reunião para discutir o projeto X?"
+- Resposta: "Feliz Carnaval! Espero que você também aproveite o feriado. Claro, podemos agendar uma reunião para discutir o projeto X na próxima semana. Qual dia funciona melhor para você?"
+- Classificação: "Produtivo"
+
+EXEMPLOS DE EMAILS SOCIAIS E RESPOSTAS:
+- Email: "Feliz Ano Novo pessoal! Espero que tenham tido umas férias ótimas"
+- Resposta: "Feliz Ano Novo! Obrigado pelos votos. Ansioso por um ano produtivo pela frente."
+- Classificação: "Improdutivo"
+
+- Email: "Obrigado pelos parabéns de aniversário! Adorei o cartão carinhoso"
+- Resposta: "De nada! Espero que tenha tido uma comemoração de aniversário maravilhosa."
+- Classificação: "Improdutivo"
+
+Agora sugira uma resposta para este email:
+{email_content}
+
+Considere:
+- Combine o tom e contexto de exemplos similares
+- Para emails de negócios: Seja prático e profissional
+- Para emails sociais: Seja amigável mas breve
+- Para conteúdo misto: Aborde ambos aspectos apropriadamente, mas classifique como Produtivo se houver qualquer componente de negócios.
+
+Retorne formato JSON:
+{{
+    "classification": "Produtivo" ou "Improdutivo",
+    "suggested_response": "sua resposta completa sugerida"
+}}

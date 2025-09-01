@@ -1,0 +1,22 @@
+[
+  {
+    "content": "Feliz Ano Novo! Aliás, por favor me enviem nossas revisões do Q1 até sexta-feira.",
+    "expected_response": "Feliz Ano Novo para você também! Vou compilar as revisões do Q1 e enviar até quinta-feira. Alguma seção específica que quer que eu foque?",
+    "expected_classification": "Produtivo"
+  },
+  {
+    "content": "Obrigado pelos parabéns de aniversário! Podemos reagendar nossa reunião do projeto para quarta-feira?",
+    "expected_response": "De nada - espero que tenha tido um ótimo aniversário! Quarta-feira funciona perfeitamente para a reunião do projeto. Mesmo horário originalmente planejado?",
+    "expected_classification": "Produtivo"
+  },
+  {
+    "content": "Espero que todos tenham tido um ótimo fim de semana! A apresentação de marketing vence amanhã.",
+    "expected_response": "Obrigado - tive um fim de semana relaxante! Tenho minhas seções da apresentação de marketing prontas. Devemos fazer uma revisão final antes de enviar amanhã?",
+    "expected_classification": "Produtivo"
+  },
+  {
+    "content": "Espero que suas férias tenham sido ótimas! Adorei as fotos que você compartilhou.",
+    "expected_response": "Obrigado! Foram maravilhosas e muito refrescantes. Obrigado por ter tempo para ver as fotos - sempre bom compartilhar as memórias com a equipe.",
+    "expected_classification": "Improdutivo"
+  }
+]
