@@ -1,15 +1,15 @@
 {
- "functions": {
-   "run.py": {
-     "maxDuration": 10
-   }
- },
- "rewrites": [
-   { "source": "/", "destination": "/run.py" },
-   { "source": "/api/(.*)", "destination": "/run.py" },
-   { "source": "/(.*)", "destination": "/run.py" }
- ],
- "env": {
-   "PYTHONPATH": "."
- }
+  "functions": {
+    "api/app.py": {
+      "maxDuration": 10
+    }
+  },
+  "rewrites": [
+    { "source": "/", "destination": "/api/app" },
+    { "source": "/api/(.*)", "destination": "/api/app" },
+    { "source": "/(.*)", "destination": "/api/app" }
+  ],
+  "env": {
+    "PYTHONPATH": "."
+  }
 }
