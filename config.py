@@ -8,8 +8,8 @@ class Config:
     ANTHROPIC_MODEL = "claude-3-haiku-20240307"
     PROMPT_TEMPLATE = """Você é um assistente de email. Leia o seguinte email e sugira uma resposta apropriada.
 Classifique-o como "Produtivo" ou "Improdutivo".
-Produtivo: solicitações de trabalho, demandas, clientes, reuniões, prazos, etc.
-Improdutivo: emails sociais, cortesias(bom dia, tudo bem, como vai, etc), fofocas, discussões pessoais, felicitações, feriados etc
+Produtivo: solicitações de trabalho, demandas, clientes, reuniões, prazos, etc. Necessário conter conteúdo relacionado ao trabalho.
+Improdutivo: emails sociais, cortesias (bom dia, tudo bem, como vai, etc), fofocas, discussões pessoais, felicitações, feriados etc
 Um email com ambos os elementos (trabalho e social) deve ser classificado como "Produtivo".
 
 
