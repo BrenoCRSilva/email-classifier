@@ -1,0 +1,15 @@
+{
+ "functions": {
+   "run.py": {
+     "maxDuration": 10
+   }
+ },
+ "rewrites": [
+   { "source": "/", "destination": "/run.py" },
+   { "source": "/api/(.*)", "destination": "/run.py" },
+   { "source": "/(.*)", "destination": "/run.py" }
+ ],
+ "env": {
+   "PYTHONPATH": "."
+ }
+}
