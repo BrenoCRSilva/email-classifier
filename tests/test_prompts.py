@@ -3,10 +3,9 @@ import os
 import sys
 from pathlib import Path
 
-from app.services.classifier import ClassificationService
-
-
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+
+from app.services.classifier import ClassificationService
 
 
 def test_prompt_classification_accuracy(prompt_name, prompt_text):
