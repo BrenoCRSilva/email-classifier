@@ -2,9 +2,12 @@ import json
 import os
 import sys
 from pathlib import Path
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
-
 from app.services.classifier import ClassificationService
 
 
