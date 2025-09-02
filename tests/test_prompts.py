@@ -2,34 +2,28 @@ import json
 import os
 import sys
 from pathlib import Path
-from dotenv import load_dotenv
 
-# Load environment variables from .env file
-load_dotenv()
-
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 from app.services.classifier import ClassificationService
 
 
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+
+
 def test_prompt_classification_accuracy(prompt_name, prompt_text):
-    # Load all email types with expected classifications
     test_emails = []
-    
-    # Load productive emails
+
     with open("test_data/productive_emails.json", "r") as f:
         emails = json.load(f)
         for email in emails:
             email["expected_classification"] = "Produtivo"
             test_emails.append(email)
-    
-    # Load unproductive emails  
+
     with open("test_data/unproductive_emails.json", "r") as f:
         emails = json.load(f)
         for email in emails:
             email["expected_classification"] = "Improdutivo"
             test_emails.append(email)
-    
-    # Load edge case emails (already have expected_classification in JSON)
+
     with open("test_data/edge_case_emails.json", "r") as f:
         emails = json.load(f)
         test_emails.extend(emails)
